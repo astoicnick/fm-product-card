@@ -46,6 +46,11 @@ body {
 
 .card-img {
   width: 50%;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: top;
 }
 .card-body {
   width: 50%;
@@ -70,6 +75,9 @@ body {
   font-weight: 700;
   font-size: 35px;
   line-height: 95%;
+}
+.card-title:first-child {
+  display: none;
 }
 .card-description {
   font-family: 'Montserrat';
@@ -127,4 +135,59 @@ body {
   height: 20px;
 }
 
-@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 375px) 
+{
+  body {
+    padding: 10px;
+
+  }
+  .card {
+    display: block;
+    height: 800px;
+    flex-wrap: wrap;
+    height: 94vh;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .card-img {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-attachment: fixed;
+  /* background-position-y: -100px;
+  background-position-x: -100px; */
+  padding: 10px;
+  background-size: 600px;
+  }
+  
+  .card-content {
+    margin: 25px;
+  }
+  .card-title {
+    font-size: 33px;
+    margin: 0;
+  }
+  .card-title:first-child {
+    display: block;
+  }
+  /* .card-title:first-child {
+    display: block;
+  } */
+  .card-img {
+    width: 100%;
+    height: 300px;
+  }
+  .card-body {
+    width: 100%;
+  }
+  .card-description {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  
+  .card-prices{
+    max-height: 30px;
+    margin-bottom: 3vh;
+  }
+}
