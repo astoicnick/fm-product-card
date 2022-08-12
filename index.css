@@ -40,20 +40,22 @@ body {
   height: 480px;
   display: flex;
   direction: row;
+  flex-wrap: nowrap;
   overflow: hidden;
   box-shadow: 5px black;
 }
 
 .card-img {
-  width: 50%;
+  width: 100%;
   background-image: url("./images/image-product-desktop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: top;
+  background-position-y: cen;
+  /* background-position-x: center;
+  background-position-y: top; */
 }
 .card-body {
-  width: 50%;
+  width: 90%;
 }
 .card-content {
   margin-left: 40px;
@@ -73,16 +75,18 @@ body {
   font-family: 'Fraunces';
   /* width: 70%; */
   font-weight: 700;
-  font-size: 35px;
+  font-size: 33px;
   line-height: 95%;
 }
-.card-title:first-child {
+.card-title br {
   display: none;
 }
 .card-description {
   font-family: 'Montserrat';
   line-height: 1.5rem;
   color: var(--dark-grayish-blue);
+  font-size: 14px;
+  font-weight: 700;
 }
 .card-prices {
   display: flex;
