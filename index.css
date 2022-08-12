@@ -37,7 +37,7 @@ body {
   /* border: 2px solid var(--primary); */
   border-radius: 10px;
   width: 700px;
-  height: 550px;
+  height: 480px;
   display: flex;
   direction: row;
   overflow: hidden;
@@ -48,27 +48,39 @@ body {
   width: 50%;
 }
 .card-body {
-  padding: 50px;
   width: 50%;
+}
+.card-content {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .card-category {
   font-family: 'Montserrat';
   text-transform: uppercase;
   letter-spacing: .4rem;
   color: var(--dark-grayish-blue);
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: bold;
 }
 .card-title {
   font-family: 'Fraunces';
-  width: 80%;
+  /* width: 70%; */
   font-weight: 700;
+  font-size: 35px;
+  line-height: 95%;
 }
 .card-description {
   font-family: 'Montserrat';
+  line-height: 1.5rem;
+  color: var(--dark-grayish-blue);
 }
 .card-prices {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  margin-bottom: 1vh;
 }
 .card-sale-price {
   font-family: 'Fraunces';
@@ -76,8 +88,12 @@ body {
   color: var(--primary);
 }
 .card-regular-price {
-  font-family: 'Fraunces';
-  font-weight: bold;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 13px;
+  margin-left: 10px;
 }
 .atc-button {
   font-family: 'Montserrat';
@@ -89,13 +105,21 @@ body {
   justify-content: center;
   width: 100%;
   border-radius: 10px;
-
-}
-.atc-button:before {
-  content: url(../product-preview-card-component-main/images/icon-cart.svg);
+  border: none;
+  height: 50px;
+  font-size: 16px;
   margin: 0;
   margin-right: 10px;
+  margin-bottom: auto;
+  padding: 0;
+}
+.atc-button:before {
+  content: url(./images/icon-cart.svg);
+  margin: 0;
+  margin-top: 5px;
   font-weight: 700;
+  padding-right: 10px;
+  width: 20px;
 }
 .attribution {
   display: block;
